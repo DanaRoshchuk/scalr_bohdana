@@ -3,7 +3,3 @@ resource "random_id" "my_id" {
     byte_length = 5
     prefix = "Yowsa_"
 }
-
-output "id_out" {
-    value = random_id.my_id[*].result
-}
