@@ -5,5 +5,5 @@ resource "random_id" "my_id" {
 }
 
 output "id_out" {
-    value = random_id.my_id[*].b64
+    value = random_id.my_id[*].b
 }
