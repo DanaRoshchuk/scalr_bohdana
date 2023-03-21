@@ -8,7 +8,7 @@ variable "sleep_time" {
 
 resource "random_integer" "timeout" {
   min = 30
-  max = 100
+  max = 200
 
   keepers = {
     run_id = var.run_id
