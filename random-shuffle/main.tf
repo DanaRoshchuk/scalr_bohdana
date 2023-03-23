@@ -1,7 +1,7 @@
 variable "strings" { default = ["a","b","c","e"]}
 
 resource "random_shuffle" "my_shuffle" {
-  input = var.strings
+  input = null
   result_count = length(var.strings)
 }
 
