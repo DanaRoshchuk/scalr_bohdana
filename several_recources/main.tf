@@ -1,7 +1,7 @@
 resource "random_integer" "ran" {
   count = var.quantity
   min = 100
-  max = 200
+  max = 300
   keepers = {
     run_id = var.run_id
   }
