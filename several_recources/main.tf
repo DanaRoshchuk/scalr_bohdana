@@ -28,4 +28,4 @@ resource "random_id" "my_id" {
     byte_length = 5
     prefix = "Yoy"
 }
-}
+
