@@ -1,14 +1,14 @@
 variable "run_id" {
-  default = "run_id_2"
+  default = "run_id_3"
 }
 
 variable "sleep_time" {
-  default = 40
+  default = 60
 }
 
 resource "random_integer" "timeout" {
   min = 50
-  max = 500
+  max = 600
 
   keepers = {
     run_id = var.run_id
