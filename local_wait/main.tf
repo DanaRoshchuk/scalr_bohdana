@@ -1,5 +1,5 @@
 variable "run_id" {
-  default = "run_id_3"
+  default = 
 }
 
 variable "sleep_time" {
