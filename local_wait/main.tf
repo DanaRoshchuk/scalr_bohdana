@@ -7,7 +7,7 @@ variable "sleep_time" {
 }
 
 resource "random_integer" "timeout" {
-  min = 50
+  min = 60
   max = 600
 
   keepers = {
