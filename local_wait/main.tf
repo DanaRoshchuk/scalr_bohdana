@@ -3,7 +3,7 @@ variable "run_id" {
 }
 
 variable "sleep_time" {
-  default = 60
+  default = 100
 }
 
 resource "random_integer" "timeout" {
