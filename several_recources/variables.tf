@@ -1,5 +1,5 @@
 variable "quantity" {
-	default = 2
+	default = 1
 	type = string
 }
 variable "prefix" {
