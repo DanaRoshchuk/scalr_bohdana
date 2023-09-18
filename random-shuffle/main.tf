@@ -1,4 +1,4 @@
-variable "strings" { default = ["a","b","c","e"]}
+variable "strings" { default = ["a","b","c","d"]}
 
 resource "random_shuffle" "my_shuffle" {
   input = var.strings
