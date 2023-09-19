@@ -1,5 +1,5 @@
 terraform {
-  required_version = "1.1.2"
+  required_version = "0.14.4"
 }
 
 resource "random_id" "my_id" {
