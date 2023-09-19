@@ -1,3 +1,7 @@
+terraform {
+  required_version = "<1.5.0"
+}
+
 variable "run_id" {
   default = "run_id_9"
 }
