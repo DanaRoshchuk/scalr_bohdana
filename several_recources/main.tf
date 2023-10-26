@@ -25,7 +25,7 @@ resource "random_shuffle" "my_shuffle" {
 }
 resource "random_id" "my_id" {
     count = 1
-    byte_length = 5
+    byte_length = 10
     prefix = "Yoy"
 }
 
