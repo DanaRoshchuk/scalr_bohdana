@@ -1,9 +1,13 @@
+terraform {
+  required_version = ">= 1.2.0"
+}
+
 variable "run_id" {
-  default = "run_id_2"
+  default = "run_id_9"
 }
 
 variable "sleep_time" {
-  default = 60
+  default = 100
 }
 
 resource "random_integer" "timeout" {
