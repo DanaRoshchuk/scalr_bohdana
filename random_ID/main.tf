@@ -1,5 +1,5 @@
 resource "random_id" "my_id" {
-    count = 4
+    count = 3
     byte_length = 4
     prefix = "hoh_"
 }
