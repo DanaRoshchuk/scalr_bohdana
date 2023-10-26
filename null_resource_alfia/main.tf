@@ -6,8 +6,8 @@ variable "docker_ports" {
   }))
   default = [
     {
-      internal = 8300
-      external = 8300
+      internal = 8400
+      external = 8400
       protocol = "tcp"
     }
   ]
