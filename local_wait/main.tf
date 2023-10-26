@@ -3,7 +3,7 @@ terraform {
 }
 
 variable "run_id" {
-  default = "run_id_9"
+  default = "run_id_1"
 }
 
 variable "sleep_time" {
