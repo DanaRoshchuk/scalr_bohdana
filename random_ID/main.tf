@@ -3,7 +3,7 @@ terraform {
 }
 
 resource "random_id" "my_id" {
-    count = 2
+    count = 20
     byte_length = 4
     prefix = "hoh_"
 }
