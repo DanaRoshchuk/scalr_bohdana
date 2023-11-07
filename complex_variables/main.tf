@@ -1,5 +1,5 @@
 #In this example, the magic_animals_list variable is defined as a list of strings representing magic animals. The resulting list will be ["unicorn", "dragon", "phoenix", "griffin"].
-variable "magic_animals_list" {
+variable "magic_animals_list" 
   type    = list(string)
   default = ["unicorn", "dragon", "phoenix", "griffin", "thestral", "cat"]
 }
