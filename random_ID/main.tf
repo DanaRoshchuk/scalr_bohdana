@@ -7,3 +7,4 @@ resource "random_id" "my_id" {
     byte_length = 4
     prefix = "hoh_"
 
+}
