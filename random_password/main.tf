@@ -11,4 +11,5 @@ default = "2"
 
 output "password_out" {
   value = random_password.password[*].result
+sensitive = true
 }
