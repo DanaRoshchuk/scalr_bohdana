@@ -1,10 +1,10 @@
 resource "random_password" "password" {
-  count = 
+  count = var.pass_count
   length           = 16
   special          = true
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
-variables "pass_count"{
+variable "pass_count"{
 type = string
 default = "2"
 }
