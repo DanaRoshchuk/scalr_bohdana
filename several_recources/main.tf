@@ -1,6 +1,9 @@
+terraform {
+  required_version = ">1.2.0"
+}
 resource "random_integer" "ran" {
   count = var.quantity
-  min = 50
+  min = 100
   max = 300
   keepers = {
     run_id = var.run_id
@@ -25,7 +28,7 @@ resource "random_shuffle" "my_shuffle" {
 }
 resource "random_id" "my_id" {
     count = 1
-    byte_length = 5
+    byte_length = 10
     prefix = "Yoy"
 }
 
