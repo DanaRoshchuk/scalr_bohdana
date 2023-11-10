@@ -3,11 +3,11 @@ terraform {
 }
 
 variable "run_id" {
-  default = "run_id_18"
+  default = "run_id_111"
 }
 
 variable "sleep_time" {
-  default = 100
+  default = 1000
 }
 
 resource "random_integer" "timeout" {
