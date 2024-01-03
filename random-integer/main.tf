@@ -6,3 +6,10 @@ resource "random_integer" "ran" {
     run_id = var.run_id
   }
 }
+variable "quantity" {
+  type    = number
+}
+
+variable "run_id" {
+  type    = string
+}
