@@ -1,15 +1,4 @@
-variable "quantity" {
-	default = 20
-	type = string
-}
-variable "prefix" {
-	default = ["Mr", "Mrs", "Sir"]
-	type = list
-}
-variable "run_id" {
-  default = "run_id_2"
-}
-variable "strings" { 
-default = ["a","b","c","d"]
-type = list(string)
-}
+quintity = "2"
+prefix = "Mrs"
+run_id = "run-id_2"
+strings = "a"
