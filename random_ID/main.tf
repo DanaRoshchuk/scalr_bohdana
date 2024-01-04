@@ -8,3 +8,7 @@ resource "random_id" "my_id" {
     prefix = var.prefix
 
 }
+variable "prefix"{
+type = string
+default = "mr"
+}
