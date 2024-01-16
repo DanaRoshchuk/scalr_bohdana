@@ -8,3 +8,4 @@ resource "random_id" "my_id" {
     prefix = "hoh_"
 
 }
+
