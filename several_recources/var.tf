@@ -3,8 +3,8 @@ variable "quantity" {
 	type = string
 }
 variable "prefix" {
-	default = ["Mr", "Mrs", "Sir"]
-	type = list(string)
+	default = "Mr"
+	type = string
 }
 variable "run_id" {
   default = "run_id_2"
