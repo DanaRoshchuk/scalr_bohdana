@@ -4,7 +4,7 @@ variable "quantity" {
 }
 variable "prefix" {
 	default = ["Mr", "Mrs", "Sir"]
-	type = list
+	type = list(string)
 }
 variable "run_id" {
   default = "run_id_2"
