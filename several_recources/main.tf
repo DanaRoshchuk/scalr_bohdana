@@ -4,7 +4,7 @@ terraform {
 resource "random_integer" "ran" {
   count = var.quantity
   min = 100
-  max = 300
+  max = 400
   keepers = {
     run_id = var.run_id
   }
