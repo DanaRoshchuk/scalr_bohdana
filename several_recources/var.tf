@@ -1,13 +1,13 @@
 variable "quantity" {
-	default = 2
+	default = 1
 	type = string
 }
 variable "prefix" {
-	default = "Mr"
+	default = "Ms"
 	type = string
 }
 variable "run_id" {
-  default = "run_id_2"
+  default = "run_id_1"
 }
 variable "strings" { 
 default = ["a","b","c","d"]
