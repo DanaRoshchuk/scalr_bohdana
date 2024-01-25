@@ -1,4 +1,6 @@
-
+variable "run_id" {
+  default = ""
+}
 
 variable "sleep_time" {
   default = 19
