@@ -1,0 +1,12 @@
+- name: "nodepool1"
+  vm_size: "Standard_D2_v2"
+  node_count: 1
+  tags:
+    - project: foo
+    - environment: dev
+- name: "nodepool2"
+  vm_size: "Standard_D2_v2"
+  node_count: 2
+  tags:
+    - project: bar
+    - environment: dev
