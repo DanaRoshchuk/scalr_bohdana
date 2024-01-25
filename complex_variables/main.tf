@@ -70,7 +70,8 @@ variable "magic_animal_object" {
 variable "magic_animal_tuple" {
   type    = tuple([string, string, string])
   default = ["Usual Centaur", "Big Earth", "Non-Archery-Dry-check-on-222staging"]
-}output "tuple_example" {
+}
+output "tuple_example" {
   value = var.magic_animal_tuple
 }
 output "object_example" {
