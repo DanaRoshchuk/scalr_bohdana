@@ -1,4 +1,5 @@
 variable "run_id" {
+  default = "run_id_2"
 
 }
 
@@ -17,7 +18,7 @@ resource "null_resource" "resource3" {
 }
 
 resource "random_integer" "ff55cout0129timeout0123456789timeout0123456789timeout0123456789" {
-  count = 1
+  count = 0
   min = 32
   max = 180
 
