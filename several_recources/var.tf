@@ -10,6 +10,6 @@ variable "run_id" {
   default = "run_id_1"
 }
 variable "strings" { 
-default = ["a","b","c","d"]
+default = ["aa","bb","cc","dd"]
 type = list(string)
 }
