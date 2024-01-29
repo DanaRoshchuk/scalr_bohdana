@@ -14,8 +14,7 @@ resource "random_pet" "pet" {
  separator = "."
  length = 1
  }
- resource "null_resource" "env_vars" 
-{
+ resource "null_resource" "env_vars" {
   #count = 5
   provisioner "local-exec" {
     command = "echo $ENV"
