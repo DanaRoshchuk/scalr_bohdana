@@ -14,14 +14,24 @@ resource "random_pet" "pet" {
  separator = "."
  length = 1
  }
- resource "null_resource" "env_vars" {
+ resource "null_resource" "env_vars" 
+{
+  #count = 5
+  provisioner "local-exec" {
+    command = "echo $ENV"
+    environment = {
+      ENV = "Hello World!"
+    }
+ }
+}
+/*{
   triggers = {
     run_id = var.run_id
   }
   provisioner "local-exec" {
     command = "env"
   }
-}
+}*/
 resource "random_shuffle" "my_shuffle" {
   input = var.strings
   result_count = length(var.strings)
