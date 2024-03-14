@@ -30,3 +30,10 @@ data "local_file" "read_ip" {
 output "scalr_ip" {
   value = "Current instance IP is: ${data.local_file.read_ip.content}\nDocker ports information: ${jsonencode(var.docker_ports)}"
 }
+resource "random_uuid" "test" {
+count = 10
+}
+output "uuid_out" {
+  value = random_uuid.test[*].result
+sensitive = true
+}
