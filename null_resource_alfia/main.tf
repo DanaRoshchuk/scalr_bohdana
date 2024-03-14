@@ -30,3 +30,11 @@ data "local_file" "read_ip" {
 output "scalr_ip" {
   value = "Current instance IP is: ${data.local_file.read_ip.content}\nDocker ports information: ${jsonencode(var.docker_ports)}"
 }
+resource "null_resource" "check_i4" {
+  triggers = {
+    current_time = timestamp()
+  }
+  provisioner "local-exec" {
+    command = "curl -s https://ifconfig.me/ip > ip.txt"
+  }
+}
