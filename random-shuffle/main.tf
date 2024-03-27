@@ -1,3 +1,17 @@
+terraform {
+  required_providers {
+    random = {
+      source = "hashicorp/random"
+      version = "3.5.1"
+    }
+  }
+}
+
+provider "random" {
+  # Configuration options
+}
+
+
 variable "strings" { default = ["af","bf","cf","df"]}
 
 resource "random_shuffle" "my_shuffle" {
