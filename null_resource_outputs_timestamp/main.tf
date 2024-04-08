@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
   required_providers {
     null = {
       source = "hashicorp/null"
@@ -9,7 +9,7 @@ terraform {
 
 provider "null" {
   # Configuration options
-}
+}*/
 resource "null_resource" "single" {
 count = 10
   triggers = {
