@@ -41,6 +41,7 @@ variable "magic_animals" {
 #In this example, the magic_animals_set variable is defined as a set of strings representing magic animals. The resulting set will be ["unicorn", "dragon", "phoenix", "griffin"]
 variable "magic_animals_set" {
   type    = set(string)
+  sensitive = true
   default = ["unicorn", "dragon", "phoenix", "griffin", "black cat"]
 }
 #In this example, the magic_animals_map variable is defined as a map of strings representing magic animals and their associated qualities. The resulting map will be { "unicorn" = "sparkle", "dragon" = "fire", "phoenix" = "rebirth", "griffin" = "majesty" }.
