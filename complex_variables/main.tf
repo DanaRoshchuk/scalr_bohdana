@@ -89,3 +89,6 @@ output "list_example" {
 output "list_example2" {
   value = var.magic_animals_list
 }
+output "magic_animals" {
+  value = var.magic_animals
+}
