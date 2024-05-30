@@ -83,6 +83,7 @@ output "module_new_map_example" {
 }
 output "set_example" {
   value = var.magic_animals_set
+sensitive = true
 }
 output "list_example" {
   value = var.magic_animals_list
