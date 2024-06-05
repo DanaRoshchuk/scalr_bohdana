@@ -1,19 +1,3 @@
-
-
-
-terraform {
-  backend "remote" {
-    hostname     = "bohdana10.dana-master.testenv.scalr.dev"
-    organization = "env-v0od10q25faujv1nt"
-    token        = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzY2Fscjp1c2VyIiwianRpIjoiYXQtdjBvZDExbGU0bzQxbDIwb2YifQ.K5SIzBSqe7OA8eGA24GVgOxgjXox2ZDXa2I_lvXQIAU"
-
-    workspaces {
-      name = "cli"
-    }
-  }
-}
-
-
 resource "random_integer" "ran" {
   count = var.quantity
   min   = 100
@@ -66,5 +50,5 @@ variable "run_id" {
 }
 variable "strings" {
   default = ["aa", "bb", "cc", "dd"]
-  types   = list(string)
+  type    = list(string)
 }
