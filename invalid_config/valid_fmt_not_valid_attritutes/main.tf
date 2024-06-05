@@ -1,10 +1,10 @@
 resource "random_id" "my_id" {
-    quantity = 20
+    quantity    = 20
     byte_length = 4
-    prefix = var.prefix
+    prefix      = var.prefix
 
 }
 variable "prefix"{
-type = string
+type    = string
 default = "mr"
 }
