@@ -47,7 +47,7 @@ variable "quantity" {
 variable "run_id" {
   default = "run_2"
 }
-vari
+
 variable "prefix" {
   type    = string
 }
