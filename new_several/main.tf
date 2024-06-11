@@ -17,4 +17,6 @@ variable "quantity" {
 variable "prefix" {
 	type = string
 }
-variable "run_id" {}
+variable "run_id" {
+sensitive = true
+}
