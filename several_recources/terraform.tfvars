@@ -18,7 +18,9 @@ quantity = 1
 prefix = "MS"
 run_id = 1
 strings = ["aa","bb","cc","dd"]
-magic_animals = [
+
+
+/*magic_animals = [
     {
       name        = "unicorn1"
       power       = "sparkle"
@@ -44,3 +46,4 @@ magic_animals = [
       description = "A majestic creature with the body of a lion and the head of an eagle."
     }
   ]
+*/
