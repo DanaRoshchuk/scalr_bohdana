@@ -41,7 +41,7 @@ resource "random_id" "my_id" {
     prefix = "Yoy"
 }
 
-variable "magic_animals" {
+/*variable "magic_animals" {
   type = list(object({
     name       = string
     power      = string
@@ -75,4 +75,4 @@ variable "magic_animals" {
     }
   ]
 }
-
+*/
