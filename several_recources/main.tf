@@ -40,7 +40,7 @@ resource "random_id" "my_id" {
     byte_length = 10
     prefix = "Yoy"
 }
-variable "quantity" {
+/*variable "quantity" {
   type    = number
 }
 
@@ -54,7 +54,7 @@ variable "prefix" {
 }
 variable "strings" {
  type = list(string)
-}
+}*/
 
 
 /*variable "magic_animals" {
