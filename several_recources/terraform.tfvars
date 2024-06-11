@@ -1,4 +1,4 @@
-variable "quantity" {
+/*variable "quantity" {
 	default = 1
 	type = string
 }
@@ -12,9 +12,9 @@ variable "run_id" {
 variable "strings" { 
 default = ["aa","bb","cc","dd"]
 type = list(string)
-}
+}*/
 
-/*quantity = 1
+quantity = 1
 prefix = "MS"
 run_id = 1
-strings = ["aa","bb","cc","dd"]*/
+strings = ["aa","bb","cc","dd"]
