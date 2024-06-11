@@ -51,7 +51,7 @@ variable "run_id" {
 variable "prefix" {
   type    = string
 }
-variable "string" {
+variable "strings" {
  type = list(string)
 }
 
