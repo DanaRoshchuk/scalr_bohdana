@@ -7,7 +7,7 @@ variable "prefix" {
 	type = string
 }
 variable "run_id" {
-  default = "run_id_11"
+  default = ""
 }
 variable "strings" { 
   default = ["q","w","e","r"]
