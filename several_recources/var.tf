@@ -1,4 +1,4 @@
-*variable "quantity" {
+variable "quantity" {
 	default = 11
 	type = string
 }
