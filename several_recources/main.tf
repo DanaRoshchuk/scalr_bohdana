@@ -45,7 +45,7 @@ variable "quantity" {
 }
 
 variable "run_id" {
-  type = "string"
+  type = string
   default = ""
 }
 
