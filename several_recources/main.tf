@@ -45,7 +45,8 @@ variable "quantity" {
 }
 
 variable "run_id" {
-  default = "run_2"
+  type = "string"
+  default = ""
 }
 
 variable "prefix" {
