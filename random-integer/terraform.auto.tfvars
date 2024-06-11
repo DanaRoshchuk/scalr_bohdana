@@ -1,2 +1,2 @@
-quantity = 20
-run_id = "run_id_auto_var"
+quantity = 3
+run_id = "run_3"
