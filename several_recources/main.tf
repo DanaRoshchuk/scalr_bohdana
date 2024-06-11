@@ -40,6 +40,21 @@ resource "random_id" "my_id" {
     byte_length = 10
     prefix = "Yoy"
 }
+variable "quantity" {
+  type    = number
+}
+
+variable "run_id" {
+  default = "run_2"
+}
+vari
+variable "prefix" {
+  type    = string
+}
+variable "string" {
+ type = list(string)
+}
+
 
 /*variable "magic_animals" {
   type = list(object({
