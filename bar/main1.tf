@@ -1,5 +1,5 @@
 resource "random_uuid" "test" {
-count = 10
+count = 11
 }
 output "uuid_out" {
   value = random_uuid.test[*].result
