@@ -9,7 +9,7 @@ resource "random_password" "password" {
 }
 variable "pass_count"{
 type = string
-default = "6"
+default = "7"
 }
 
 output "password_out" {
