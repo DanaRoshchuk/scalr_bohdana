@@ -12,10 +12,10 @@ resource "random_pet" "pet" {
  length = 1
  }
 variable "quantity" {
-	type = string
+	#type = string
 }
 variable "prefix" {
-	type = string
+	#type = string
 }
 variable "run_id" {
 sensitive = true
