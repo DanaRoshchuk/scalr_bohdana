@@ -11,10 +11,6 @@ resource "random_pet" "pet" {
  separator = "."
  length = 1
  }
-variable "quantity" {
-	type = string
-}
-variable "prefix" {
-	type = string
-}
+variable "quantity" {}
+variable "prefix" {}
 variable "run_id" {}
