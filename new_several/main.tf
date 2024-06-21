@@ -11,12 +11,13 @@ resource "random_pet" "pet" {
  separator = "."
  length = 1
  }
-variable "quantity" {
-	#type = string
+resource "random_shuffle" "my_shuffle" {
+input = var.strings
+result_count = length(var.strings)
 }
-variable "prefix" {
-	#type = string
-}
+variable "quantity" {}
+variable "prefix" {}
 variable "run_id" {
 sensitive = true
 }
+variable "strings" {}
