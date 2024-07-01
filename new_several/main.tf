@@ -15,7 +15,8 @@ resource "random_shuffle" "my_shuffle" {
 input = var.strings
 result_count = length(var.strings)
 }
-variable "quantity" {}
+variable "quantity" {
+type = number}
 variable "prefix" {}
 variable "run_id" {
 sensitive = true
