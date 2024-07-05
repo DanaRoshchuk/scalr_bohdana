@@ -16,9 +16,11 @@ input = var.strings
 result_count = length(var.strings)
 }
 variable "quantity" {
-#type = number
+type = number
 }
-variable "prefix" {}
+variable "prefix" {
+type = number
+}
 variable "run_id" {
 #sensitive = true
 }
