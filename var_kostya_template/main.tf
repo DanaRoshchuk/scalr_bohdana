@@ -20,7 +20,7 @@ variable "sleep_time" {
 }
 
 resource "null_resource" "resource2" {
-  #count = 5
+  count = 5000
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
@@ -29,8 +29,8 @@ resource "null_resource" "resource2" {
  }
 }
 
-resource "random_integer" "ff55cout0129timeout0123456789timeout0123456789timeout0123456789" {
-  count = 1
+resource "random_integer" "ff55cout0129timeout0123456789timeout0123456789timeout012345678911111111111111121212121212121212123243434343434" {
+  count = 1000
   min = 32
   max = 180
 
@@ -50,7 +50,7 @@ resource "null_resource" "wait1" {
 }
 
 resource "null_resource" "env_varstimeout0123456789timeout0123456789timeout0123456789timeout012345678" {
-  count = 1
+  count = 1000
   triggers = {
     run_id = var.run_id
   }
