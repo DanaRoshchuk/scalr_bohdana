@@ -1,4 +1,4 @@
 module "size" {
-	source  = "bohdana10.dana-master.testenv.scalr.dev/env-v0ofg708q15jpufhv/size/huge"
+	source  = "dana-git.dana-master.testenv.scalr.dev/acc-v0ofhkdcp8lkbgr62/size/huge"
 	version = "4.4.4"
 }
