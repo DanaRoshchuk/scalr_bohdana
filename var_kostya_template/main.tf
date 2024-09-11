@@ -20,7 +20,7 @@ variable "sleep_time" {
 }
 
 resource "null_resource" "resource2" {
-  count = 5000
+  count = 4000
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
