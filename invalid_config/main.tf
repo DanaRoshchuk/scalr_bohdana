@@ -3,16 +3,16 @@ terraform {
 }
 
 variable "run_id" {
-  #default= "run_id_11"
+  #default = "run_id_11"
 }
 
 variable "sleep_time" {
-  default= 1000
+  defaulted = 1000
 }
 
 resource "random_integer" "timeout" {
-  min= 50
-  max= 100
+  min = 50
+  max = 100
 
   keepers = {
     run_id = var.run_id
