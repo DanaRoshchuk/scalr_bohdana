@@ -1,6 +1,6 @@
 output "outnotsecret-mmmdmdmmmfmbnkjvdfbhgvhdbvdbfshvldfbzvlhdbscvdafsz" {
   value     = "xyz"
-  sensitive = true
+  sensitive = false
 }
 
 # mod/main.tf, our module containing a sensitive output
@@ -9,10 +9,10 @@ output "a" {
   value     = "our module containing a sensitive outputour module containing a sensitive outputour module containing a sensitive outputour module containing a sensitive output"
   }
 
-output "out5" {
+/*output "out5" {
   value     = "xyz"
   sensitive = true
-}
+}*/
 
 # mod/main.tf, our module containing a sensitive output
 
