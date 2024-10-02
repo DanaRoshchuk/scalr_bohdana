@@ -89,7 +89,7 @@ data "terraform_remote_state" "for_output" {
     organization = "env-v0ohntsa0o2g0gkge"
     hostname = "bohdana10.dana-runner.testenv.scalr.dev"
     workspaces = {
-      name = "random_pet"
+      name = "random-pet"
     }
   }
 }
