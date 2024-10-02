@@ -100,3 +100,4 @@ output "several" {
 
 output "several1" {
     value     = data.terraform_remote_state.for_output.resources
+}
