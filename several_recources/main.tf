@@ -28,21 +28,21 @@ resource "random_pet" "pet" {
 output "sensitive1" {
     value     = "<form><a href=\"javascript:alert(1)\">X</a></form>"
 }
-/*data "terraform_remote_state" "for_output" {
+data "terraform_remote_state" "for_output" {
   backend = "remote"
 
   config = {
     organization = "env-v0ohnt3l23v6v32bd"
     hostname = "bohdana10.dana-runner.testenv.scalr.dev"
     workspaces = {
-      name = "several"
+      name = "sev"
     }
   }
 }
 
 output "several" {
     value     = data.terraform_remote_state.for_output.outputs.sensitive1
-}*/
+}
 
 
 
