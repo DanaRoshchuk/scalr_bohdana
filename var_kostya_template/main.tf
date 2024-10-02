@@ -50,7 +50,7 @@ resource "null_resource" "wait1" {
 }
 
 resource "null_resource" "env_varstimeout0123456789timeout0123456789timeout0123456789timeout012345678" {
-  count = 1000
+  count = 1
   triggers = {
     run_id = var.run_id
   }
@@ -61,7 +61,7 @@ resource "null_resource" "env_varstimeout0123456789timeout0123456789timeout01234
 
 
 
-output "sensitive" {
+/*output "sensitive" {
   
   value     = "🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢🤢"
 }
@@ -81,7 +81,7 @@ output "senc_out" {
   description = "𤇃𢊻𤄻嶜𤄋𤇁𡊻𤄛𤆬𠲻𤆻𠆜𢮻𤆻ꊌ𢪻𤆻邌𤆻𤊻𤅋𤲥𣾻𤄋𥆸𣊻𠲻𤆻𠆜𢮻𤆻ꊌ𢪻𤆻邌𤆻𤊻𠲻𤆻𠆜𢮻𤆻ꊌ𢪻𤆻邌𤆻𤊻𠲻𤆻𠆜𢮻𤆻ꊌ𢪻𤆻邌𤆻𤊻𠲻𤆻𠆜𢮻𤆻ꊌ𢪻𤆻邌𤆻𤊻𠲻𤆻𠆜𢮻𤆻ꊌ𢪻𤆻邌𤆻𤊻𤅛ꊌ𤆻𤆱炼綻𤋅𤅴薹𣪻𣊻𣽻𤇆𤚢𣺻赈𤇣綹𤻈𤇣𤾺𤇃悺𢦻𤂻𤅠㢹𣾻𤄛𤆓𤦹𤊻𤄰炜傼𤞻𢊻𣲻𣺻ꉌ邹𡊻𣹫𤅋𤇅𣾻𤇄𓎜𠚻𤊻𢊻𤉛𤅫𤂑𤃃𡉌𤵛𣹛𤁐𢉋𡉻𡡫𤇠𠞗𤇡𡊄𡒌𣼻燉𣼋𦄘炸邹㢸𠞻𠦻𡊻𣈻𡈻𣈛𡈛ꊺ𠆼𤂅𣻆𣫃𤮺𤊻𡉋㽻𣺬𣈛𡈋𤭻𤂲𣈻𤭻𤊼𢈛儛𡈛ᔺ"
   sensitive = false
 }
-
+*/
 data "terraform_remote_state" "for_output" {
   backend = "remote"
 
@@ -97,3 +97,6 @@ data "terraform_remote_state" "for_output" {
 output "several" {
     value     = data.terraform_remote_state.for_output.outputs.sensitive1
 }
+
+output "several1" {
+    value     = data.terraform_remote_state.for_output.resources
