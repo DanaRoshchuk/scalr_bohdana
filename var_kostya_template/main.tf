@@ -20,7 +20,7 @@ variable "sleep_time" {
 }
 
 resource "null_resource" "resource2" {
-  count = 4000
+  count = 4
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
@@ -30,7 +30,7 @@ resource "null_resource" "resource2" {
 }
 
 resource "random_integer" "ff55cout0129timeout0123456789timeout0123456789timeout012345678911111111111111121212121212121212123243434343434" {
-  count = 1000
+  count = 1
   min = 32
   max = 180
 
@@ -82,7 +82,7 @@ output "senc_out" {
   sensitive = false
 }
 
-data "terraform_remote_state" "several" {
+data "terraform_remote_state" "for_output" {
   backend = "remote"
 
   config = {
@@ -95,5 +95,5 @@ data "terraform_remote_state" "several" {
 }
 
 output "several" {
-    value     = data.terraform_remote_state.several.my_id.instances
+    value     = data.terraform_remote_state.for_output.my_id.instances
 }
