@@ -82,7 +82,7 @@ output "senc_out" {
   sensitive = false
 }
 */
-data "terraform_remote_state" "for_output" {
+/*data "terraform_remote_state" "for_output" {
   backend = "remote"
 
   config = {
@@ -96,5 +96,5 @@ data "terraform_remote_state" "for_output" {
 
 output "several" {
     value     = data.terraform_remote_state.for_output.outputs.sensitive1
-}
+}*/
 
