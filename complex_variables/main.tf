@@ -13,7 +13,7 @@ variable "magic_animals" {
   }))
   default = [
     {
-      name        = "unicorn"
+      name        = "unicorn-update"
       power       = "sparkle"
       element     = "light"
       description = "A mystical creature with a single horn on its forehead."
