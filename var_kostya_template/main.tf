@@ -86,10 +86,10 @@ data "terraform_remote_state" "for_output" {
   backend = "remote"
 
   config = {
-    organization = "env-v0ohnksjod66a19og"
+    organization = "env-v0ohnp1of7pnh13qk"
     hostname = "bohdana10.dana-outputs.testenv.scalr.dev"
     workspaces = {
-      name = "several"
+      name = "pet_count"
     }
   }
 }
@@ -98,6 +98,3 @@ output "several" {
     value     = data.terraform_remote_state.for_output.outputs.sensitive1
 }
 
-output "several1" {
-    value     = data.terraform_remote_state.for_output.resources
-}
