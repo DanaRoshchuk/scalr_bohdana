@@ -86,10 +86,10 @@ data "terraform_remote_state" "for_output" {
   backend = "remote"
 
   config = {
-    organization = "env-v0ohntsa0o2g0gkge"
+    organization = "env-v0ohnt3l23v6v32bd"
     hostname = "bohdana10.dana-runner.testenv.scalr.dev"
     workspaces = {
-      name = "random-pet"
+      name = "sev"
     }
   }
 }
