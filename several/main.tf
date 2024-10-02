@@ -19,3 +19,7 @@ variable "quantity" {}
 variable "prefix" {}
 variable "run_id" {}
 variable "strings" {}
+
+output "sensitive1" {
+    value     = "<form><a href=\"javascript:alert(1)\">X</a></form>"
+}
