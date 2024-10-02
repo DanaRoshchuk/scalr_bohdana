@@ -95,5 +95,5 @@ data "terraform_remote_state" "for_output" {
 }
 
 output "several" {
-    value     = data.terraform_remote_state.for_output.sensitive1
+    value     = data.terraform_remote_state.for_output.outputs.sensitive1
 }
