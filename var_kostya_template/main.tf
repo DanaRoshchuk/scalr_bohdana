@@ -86,7 +86,7 @@ data "terraform_remote_state" "for_output" {
   backend = "remote"
 
   config = {
-    organization = "env-v0ohnksjod66a19o"
+    organization = "env-v0ohnksjod66a19og"
     hostname = "bohdana10.dana-outputs.testenv.scalr.dev"
     workspaces = {
       name = "several"
