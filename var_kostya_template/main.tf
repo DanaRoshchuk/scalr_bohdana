@@ -95,5 +95,5 @@ data "terraform_remote_state" "for_output" {
 }
 
 output "several" {
-    value     = data.terraform_remote_state.for_output.my_id.instances
+    value     = data.terraform_remote_state.for_output #.my_id.instances
 }
