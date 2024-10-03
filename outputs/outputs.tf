@@ -563,7 +563,8 @@ output "alj" {
 
 
 output "note" {
-  value     = "<<-EOT
+  value     = [
+<<-EOT
         Web:
           URL                   : https://dana-outputs.testenv.scalr.dev
           Username              : admin
@@ -577,6 +578,7 @@ output "note" {
           npx next ui/next
         Documentation:
           https://github.com/Scalr/terraform-google-infra/tree/master/modules/terraform-google-preview-saas#user-guide
-    EOT"
+    EOT
+]
   sensitive = false
 }
