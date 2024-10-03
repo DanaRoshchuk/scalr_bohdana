@@ -36,13 +36,13 @@ variable "magic_animals" {
       description = "A mystical creature with a single horn on its forehead."
     },
     {
-      name        = "dragon"
+      name        = "dragon-update"
       power       = "fire"
       element     = "fire"
       description = "A powerful creature with the ability to breathe fire."
     },
     {
-      name        = "phoenix"
+      name        = "phoenix-update"
       power       = "rebirth"
       element     = "fire"
       description = "A legendary bird that is reborn from its own ashes."
@@ -65,7 +65,7 @@ variable "magic_animals_set" {
 variable "magic_animals_map" {
   type    = map(string)
   default = {
-    unicorn  = "none"
+    unicorn  = "none-update"
     dragon   = "sleep"
     phoenix  = "eat"
     griffin  = "none"
@@ -80,7 +80,7 @@ variable "magic_animal_object" {
   })
   default = {
     name    = "MODULE VERSION Small Mermaid"
-    element = "Water"
+    element = "Water-update"
     power   = "Enchanting Voice"
   }
 }
