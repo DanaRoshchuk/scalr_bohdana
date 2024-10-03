@@ -24,7 +24,8 @@ output "aq" {
 output "outq" {
   value     = "xyz"
   sensitive = true
-}*/
+}
+*/
 
 # mod/main.tf, our module containing a sensitive output
 
