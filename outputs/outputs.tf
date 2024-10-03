@@ -1,5 +1,5 @@
 
-output "outnotsecret-mmmdmdmmmfmbnkjvdfbhgvhdbvdbfshvldfbzvlhdbscvdafsz" {
+/*output "outnotsecret-mmmdmdmmmfmbnkjvdfbhgvhdbvdbfshvldfbzvlhdbscvdafsz" {
   value     = "xyz"
   sensitive = false
 }
@@ -24,7 +24,7 @@ output "aq" {
 output "outq" {
   value     = "xyz"
   sensitive = true
-}
+}*/
 
 # mod/main.tf, our module containing a sensitive output
 
@@ -579,4 +579,10 @@ output "note" {
           https://github.com/Scalr/terraform-google-infra/tree/master/modules/terraform-google-preview-saas#user-guide
     EOT
   sensitive = false
+}
+
+output "just_added" {
+  value     = "secret"
+  sensitive = false
+  description = "key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page."
 }
