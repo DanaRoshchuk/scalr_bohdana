@@ -566,7 +566,7 @@ output "note" {
   value     = <<-EOT
         Web:
           URL                   : https://dana-outputs.testenv.scalr.dev
-          Username              : admin
+          Username              : admin-super
           Password              : zPXrS7XmbTGESfvU2wG3
         Shell:
           kubectl -n dana-outputs exec -it scalr-server-0 -c scalr -- bash
