@@ -96,7 +96,7 @@ output "magic_animals" {
 }
 
 
-variable "sensitive1" {
+/*variable "sensitive1" {
   sensitive = true
   default = 1
 }
@@ -107,3 +107,4 @@ output "magic_animals_map1" {
     dragon   = "sleep"
   }
 }
+*/
