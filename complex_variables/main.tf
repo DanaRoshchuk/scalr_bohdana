@@ -94,3 +94,20 @@ output "list_example2" {
 output "magic_animals" {
   value = var.magic_animals
 }
+
+
+variable "magic_animals_map1" {
+  default = {
+    unicorn  = { key = "value", key2 = var.sensitive}
+    dragon   = "sleep"
+  }
+}
+
+variable "sensitive" {
+  sensitive = true
+  default = 1
+}
+
+output "magic_animals_map1" {
+  value = var.magic_animals_map1
+}
