@@ -98,12 +98,12 @@ output "magic_animals" {
 
 variable "magic_animals_map1" {
   default = {
-    unicorn  = { key = "value", key2 = var.sensitive}
+    unicorn  = { key = "value", key2 = var.sensitive1}
     dragon   = "sleep"
   }
 }
 
-variable "sensitive" {
+variable "sensitive1" {
   sensitive = true
   default = 1
 }
