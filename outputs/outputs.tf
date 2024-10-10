@@ -23,7 +23,7 @@ output "aq" {
   sensitive = true
 }
 output "outq" {
-  value     = "xyz"
+  value     = "xyzzzzzzzzzzzz"
   sensitive = true
 }
 
