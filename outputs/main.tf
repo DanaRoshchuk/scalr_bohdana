@@ -80,7 +80,7 @@ variable "magic_animal_object" {
   })
   default = {
     name    = "MODULE VERSION Small Mermaid"
-    element = "Water-update"
+    element = "Water"
     power   = "Enchanting Voice"
   }
 }
@@ -108,9 +108,9 @@ output "list_example" {
 output "list_example2" {
   value = var.magic_animals_list
 }
-output "magic_animals" {
+/*output "magic_animals" {
   value = var.magic_animals
-}
+}*/
 
 
 resource "random_uuid" "test" {
@@ -163,3 +163,18 @@ output "senc_out" {
 output "output_run_id" {
   value = var.run_id
 }
+
+output "api_instance_group" {
+value = "https://www.googleapis.com/compute/v1/projects/main-scalr-dev/regions/us-central1/instanceGroups/scalr-green-api-mig"
+}
+
+output "scalr_version" {
+value = "8-143-1-rc1-20241010093054-git2612bc0"
+description = "Scalr image version"
+}
+
+output "admin_token" {
+value = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU0NDAyNjUsImlzcyI6InNjYWxyOnNjYWxyY29yZSIsInN1YiI6IjEifQ.Gte-1Jppx19Fs9n9q72t-6ooS4qALxKHgsQc0HK1BKU"
+description = ""
+}
+
