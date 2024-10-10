@@ -249,3 +249,43 @@ output "CAPITALIZED_OUTPUT" {
   value = "BIG LETTERS ARE GOOD"
 }
 
+output "multi_line_sensitive" {
+  value = <<-EOT
+{
+  "user": {
+    "id": "67890",
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "profile": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "age": 30,
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip_code": "12345"
+      }
+    }
+  }
+}
+  EOT
+  sensitive = true
+}
+
+output "multi_line" { # create sensitive shell variable with the same value as output (and its name)
+  value = {
+    "product": {
+        "id": "12345",
+        "name": "Wireless Mouse",
+        "price": 25.99,
+        "in_stock": true,
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+    }
+  }
+}
+
