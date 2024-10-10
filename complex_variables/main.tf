@@ -100,7 +100,8 @@ output "with_newline2" {
 }
 
 output "scalr" {
-value = <<-EOT data "terraform_remote_state" "rs_dana-outputs" {
+value = <<-EOT
+data "terraform_remote_state" "rs_dana-outputs" {
   backend = "remote"
 
   config = {
