@@ -106,7 +106,7 @@ data "terraform_remote_state" "rs_dana-outputs" {
 
   config = {
     hostname = "scalr-iacp.scalr.io"
-    organization = "env-u5kb47o9h1cqdq0"
+    organization = "env-id"
     workspaces = {
       name = "dana-outputs"
     }
