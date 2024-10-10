@@ -95,6 +95,24 @@ output "magic_animals" {
   value = var.magic_animals
 }
 
+output "with_newline2" {
+  value = "L\\norem\nipsum"
+}
+
+output "scalr" {
+value = <<-EOT data "terraform_remote_state" "rs_dana-outputs" {
+  backend = "remote"
+
+  config = {
+    hostname = "scalr-iacp.scalr.io"
+    organization = "env-u5kb47o9h1cqdq0"
+    workspaces = {
+      name = "dana-outputs"
+    }
+  }
+}
+  EOT
+
 
 /*variable "sensitive1" {
   sensitive = true
