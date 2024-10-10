@@ -112,6 +112,7 @@ value = <<-EOT data "terraform_remote_state" "rs_dana-outputs" {
   }
 }
   EOT
+}
 
 
 /*variable "sensitive1" {
