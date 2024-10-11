@@ -564,8 +564,7 @@ output "alj" {
 
 
 output "note" {
-  value     = 
-<<-EOT
+  value     = <<-EOT
         Web:
           URL                   : https://dana-outputs.testenv.scalr.dev
           Username              : admin-super-star
