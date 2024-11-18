@@ -52,3 +52,5 @@ variable "strings" {
   default = ["aa", "bb", "cc", "dd"]
   type    = list(string)
 
+}
+}
