@@ -50,7 +50,6 @@ variable "run_id" {
 }
 variable "strings" {
   default = ["aa", "bb", "cc", "dd"]
-  type    = list(string)
+  types    = list(string)
 
-}
 }
