@@ -1,10 +1,10 @@
-/*quantity = 1
+quantity = 1
 run_id = "run_id_1"
-*/
-variable "quantity" {
+
+/*variable "quantity" {
 	default = 1
 	type = string
 }
 variable "run_id" {
   default = "run_id_100"
-}
+}*/
