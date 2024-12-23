@@ -1,1 +1,1 @@
-#string = 1999
+string = 1999
