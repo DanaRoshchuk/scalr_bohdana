@@ -67,7 +67,7 @@ resource "random_shuffle" "my_shuffle" {
 resource "random_id" "my_id" {
     count = 1
     byte_length = 10
-    prefix = "Yoy"
+    prefix = "Yo"
 }
 /*variable "quantity" {
   type    = number
@@ -76,6 +76,11 @@ resource "random_id" "my_id" {
 variable "run_id" {
   type = string
   default = ""
+}
+resource "random_id" "my_id2" {
+    count = 2
+    byte_length = 10
+    prefix = "MR"
 }
 
 variable "prefix" {
