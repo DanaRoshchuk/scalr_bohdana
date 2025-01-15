@@ -3,7 +3,7 @@
 }*/
 resource "random_integer" "ran" {
   count = var.quantity
-  min = 260
+  min = 270
   max = 400
   keepers = {
     run_id = var.run_id
@@ -15,7 +15,7 @@ resource "random_pet" "pet" {
  length = 2
  }
  resource "null_resource" "env_vars" {
-  count = 1
+  count = 3
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
