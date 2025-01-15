@@ -3,7 +3,7 @@
 }*/
 resource "random_integer" "ran" {
   count = var.quantity
-  min = 250
+  min = 260
   max = 400
   keepers = {
     run_id = var.run_id
@@ -12,7 +12,7 @@ resource "random_integer" "ran" {
 resource "random_pet" "pet" {
  prefix = var.prefix
  separator = "."
- length = 1
+ length = 2
  }
  resource "null_resource" "env_vars" {
   count = 1
