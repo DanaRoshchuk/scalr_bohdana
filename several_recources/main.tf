@@ -1,6 +1,14 @@
 /*terraform {
   required_version = "1.7.0"
 }*/
+
+resource "scalr_variable" "var_env1-update" {
+  count = 2
+  key            = "var-${count.index}"
+  value          = "TRACE"
+  category       = "terraform"
+  environment_id = "env-v0olpdkm7jhtijgli"
+}
 resource "random_integer" "ran" {
   count = var.quantity
   min =210
