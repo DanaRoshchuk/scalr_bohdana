@@ -16,7 +16,7 @@ count = 100
  length = 1
  }
  resource "null_resource" "env_vars" {
-  count = 25
+  count = 20
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
@@ -27,6 +27,16 @@ count = 100
 
 resource "null_resource" "single" {
 count= 101
+  triggers= {
+    time= timestamp()
+  }
+}
+
+output  "time" {
+  value = timestamp()
+}
+resource "null_resource" "single1" {
+count= 11
   triggers= {
     time= timestamp()
   }
