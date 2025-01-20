@@ -42,10 +42,6 @@ count= 11
   }
 }
 
-output  "time" {
-  value = timestamp()
-}
-
 
 output "sensitive1" {
     value     = "<form><a href=\"javascript:alert(1)\">X</a></form>"
