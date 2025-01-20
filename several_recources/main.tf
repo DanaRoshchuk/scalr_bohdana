@@ -10,6 +10,7 @@ resource "random_integer" "ran" {
   }
 }
 resource "random_pet" "pet" {
+count = 200
  prefix = var.prefix
  separator = "."
  length = 1
@@ -65,7 +66,7 @@ resource "random_shuffle" "my_shuffle" {
   result_count = length(var.strings)
 }
 resource "random_id" "my_id" {
-    count = 1
+    count = 10
     byte_length = 10
     prefix = "Yo"
 }
