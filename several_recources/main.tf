@@ -25,6 +25,17 @@ count = 200
  }
 }
 
+resource "null_resource" "single" {
+count= 10
+  triggers= {
+    time= timestamp()
+  }
+}
+
+output  "time" {
+  value = timestamp()
+}
+
 
 output "sensitive1" {
     value     = "<form><a href=\"javascript:alert(1)\">X</a></form>"
