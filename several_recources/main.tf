@@ -1,7 +1,14 @@
 /*terraform {
   required_version = "1.7.0"
 }*/
-
+terraform {
+    required_providers {
+        scalr = {
+            source = "registry.scalr.io/scalr/scalr"
+            version= "2.1.1"
+        }
+    }
+}
 resource "scalr_variable" "var_env1-update" {
   count = 2
   key            = "var-${count.index}"
