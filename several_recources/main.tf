@@ -9,8 +9,8 @@ terraform {
         }
     }
 }
-resource "scalr_variable" "var_env1-update" {
-  count = 2
+resource "scalr_variable" "var_env1-update1" {
+  count = 1
   key            = "var-${count.index}"
   value          = "TRACE"
   category       = "terraform"
