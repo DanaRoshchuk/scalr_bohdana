@@ -10,7 +10,7 @@ resource "random_integer" "ran" {
   }
 }
 resource "random_pet" "pet" {
-count = 200
+count = 100
  prefix = var.prefix
  separator = "."
  length = 1
@@ -26,7 +26,7 @@ count = 200
 }
 
 resource "null_resource" "single" {
-count= 10
+count= 101
   triggers= {
     time= timestamp()
   }
