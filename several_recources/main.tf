@@ -78,7 +78,7 @@ output "several" {
     command = "env"
   }
 }*/
-resource "random_shuffle" "my_shuffle" {
+resource "random_shuffle" "my_shuffle1" {
   input = var.strings
   result_count = length(var.strings)
 }
