@@ -10,3 +10,7 @@ count = 10
  separator = "."
  length = 1
  }
+variable "prefix" {
+	default = "Sr"
+	type = string
+}
