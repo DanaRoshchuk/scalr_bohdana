@@ -1,4 +1,4 @@
 module "git" {
-    source  = "git::ssh://git@github.com/DanaRoshchuk/Scalr.Dana.git"
+    source  = "git::ssh://git@github.com.RoshchukAccount/terraform-gittest-null.git"
     }
     
