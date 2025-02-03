@@ -14,7 +14,7 @@ resource "scalr_variable" "var_env1-update1" {
   key            = "var-${count.index}"
   value          = "TRACE"
   category       = "terraform"
-  environment_id = "env-v0olpdkm7jhtijgli"
+  environment_id = "env-v0omjllcv8rd8ek7f"
 }
 resource "random_integer" "ran" {
   count = var.quantity
@@ -25,13 +25,13 @@ resource "random_integer" "ran" {
   }
 }
 resource "random_pet" "pet" {
-count = 100
+count = 10
  prefix = var.prefix
  separator = "."
  length = 1
  }
  resource "null_resource" "env_vars" {
-  count = 20
+  count = 2
   provisioner "local-exec" {
     command = "echo $ENV"
     environment = {
@@ -41,7 +41,7 @@ count = 100
 }
 
 resource "null_resource" "single" {
-count= 101
+count= 10
   triggers= {
     time= timestamp()
   }
@@ -51,7 +51,7 @@ output  "time" {
   value = timestamp()
 }
 resource "null_resource" "single1" {
-count= 11
+count= 1
   triggers= {
     time= timestamp()
   }
