@@ -253,7 +253,7 @@ data "scalr_variable" "example1" {
   id         = "var-v0on96ipj2dcla4be"
 }
 output "shell_var_sensitive" {
-  value = data.scalr_variable.example1.id
+  value = data.scalr_variable.example1.value
 }
 
 output "var_map" {
