@@ -1,8 +1,8 @@
-resource "null_resource" "qwerty" {
+resource "null_resource" "qwertyui" {
   triggers = {
     trigger = "1"
   }
 }
-output "qwerty" {
-  value = "qwerty"
+output "qwertyui" {
+  value = "qwertyui"
 }
