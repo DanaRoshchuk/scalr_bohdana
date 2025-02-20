@@ -236,10 +236,13 @@ variable "object" {
   }
 }
 
-resource "null_resource" "test" {
+resource "null_resource" "qwerty" {
   triggers = {
     trigger = "1"
   }
+}
+output "qwerty" {
+  value = "qwerty"
 }
 
 output "var_map_key_1" {
