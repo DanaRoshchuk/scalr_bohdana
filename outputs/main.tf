@@ -1,11 +1,12 @@
 terraform {
-  required_providers {
-    scalr = {
-      source  = "registry.scalr.io/scalr/scalr"
-      version = "2.5.0"
+    required_providers {
+        scalr = {
+            source = "registry.main.scalr.dev/scalr/scalr"
+            version= "1.0.0-rc-master"
+        }
     }
-  }
 }
+ 
 resource "random_password" "password" {
   count = var.pass_count
   length           = 16
