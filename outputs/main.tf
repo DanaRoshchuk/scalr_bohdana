@@ -241,6 +241,13 @@ output "var_map_key_2" {
   value = var.map.key2
 }
 
+data "scalr_variable" "example1" {
+  id         = "var-v0on96ipj2dcla4be"
+}
+output "shell_var_sensitive" {
+  value = data.scalr_variable.example1.id
+}
+
 output "var_map" {
   value = var.map
 }
