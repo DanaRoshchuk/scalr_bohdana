@@ -128,3 +128,9 @@ output "magic_animals_map1" {
   }
 }
 */
+
+variable "module_name" {
+  description = "The name of the module"
+  default = "test_module_name"
+  type        = string
+}
