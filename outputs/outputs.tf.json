@@ -2,7 +2,7 @@
   "output": {
     "db_password": {
       "value": "blelele",
-      "description": "The password for logging in to the database.",
+      "description": "The password for logging in to the database."
       #"sensitive": true
     }
   }
