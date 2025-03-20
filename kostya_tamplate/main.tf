@@ -5,6 +5,7 @@ variable "run_id" {
 
 variable "sleep_time" {
   default = 19
+description = "description in main tf"
 }
 
 resource "null_resource" "resource3" {
