@@ -53,6 +53,27 @@ output "multi_line" { # create sensitive shell variable with the same value as o
         "specifications": {
         "color": "black",
         "connectivity": "wireless",
+        "battery_life": "12 months",  "id": "12345",
+        "name": "Wireless Mouse",
+        "price": 25.99,
+        "in_stock": true,
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months",  "id": "12345",
+        "name": "Wireless Mouse",
+        "price": 25.99,
+        "in_stock": true,
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months",  "id": "12345",
+        "name": "Wireless Mouse",
+        "price": 25.99,
+        "in_stock": true,
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
         "battery_life": "12 months"
         }
     }
