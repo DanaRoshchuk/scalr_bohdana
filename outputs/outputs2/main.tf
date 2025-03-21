@@ -79,3 +79,4 @@ output "multi_line" { # create sensitive shell variable with the same value as o
     }
   }
 }
+}
