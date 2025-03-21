@@ -72,7 +72,7 @@ output "note" {
 }
 
 output "just_added" {
-  value     = "key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page. QWERTY QWERTYQWERTYQWERTYQWERTYQWERTYQWERTYQWERTY"
+  value     = "key moving focus. \nAlternatively, use esc then tab to move to the next interactive element on the page. QWERTY QWERTYQWERTYQWERTYQWERTYQWERTYQWERTYQWERTY"
   sensitive = false
   description = "key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page."
 }
