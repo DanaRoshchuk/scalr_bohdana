@@ -39,7 +39,7 @@ output "note" {
 }
 
 output "just_added" {
-  value     = "secret"
+  value     = "key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page."
   sensitive = false
   description = "key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page."
 }
