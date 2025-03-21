@@ -12,9 +12,42 @@ output "password_out" {
   value = random_password.password[*].result
 sensitive = true
 }
-output "alj" {
-  value     = "secret"
-  sensitive = true
+variable "magic_animals" {
+  type = list(object({
+    name       = string
+    power      = string
+    element    = string
+    description = string
+  }))
+  default = [
+    {
+      name        = "unicorn-update"
+      power       = "sparkle"
+      element     = "light"
+      description = "A mystical creature with a single horn on its forehead."
+    },
+    {
+      name        = "dragon-update"
+      power       = "fire"
+      element     = "fire"
+      description = "A powerful creature with the ability to breathe fire."
+    },
+    {
+      name        = "phoenix-update"
+      power       = "rebirth"
+      element     = "fire"
+      description = "A legendary bird that is reborn from its own ashes."
+    },
+    {
+      name        = "griffin"
+      power       = "majesty"
+      element     = "air"
+      description = "A majestic creature with the body of a lion and the head of an eagle."
+    }
+  ]
+}
+output "magic_animals" {
+  value = var.magic_animals
 }
 
 
@@ -72,6 +105,46 @@ output "multi_line" { # create sensitive shell variable with the same value as o
         "price": 25.99,
         "in_stock": true,
         "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+       "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+       "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+        "specifications": {
+        "color": "black",
+        "connectivity": "wireless",
+        "battery_life": "12 months"
+        }
+       "specifications": {
         "color": "black",
         "connectivity": "wireless",
         "battery_life": "12 months"
