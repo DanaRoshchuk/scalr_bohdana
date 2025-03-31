@@ -11,7 +11,7 @@ provider "null" {
   # Configuration options
 }*/
 resource "null_resource" "single" {
-count= 10
+count= 12
   triggers= {
     time= timestamp()
   }
