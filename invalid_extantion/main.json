@@ -3,12 +3,9 @@ terraform {
 }
 
 resource "random_id" "my_id" {
-    counts = 20
+    count = 20
     byte_length = 4
-    prefix = var.prefix
+    prefix = "hoh_"
 
 }
-variable "prefix"{
-type = string
-default = "mr"
-}
+
