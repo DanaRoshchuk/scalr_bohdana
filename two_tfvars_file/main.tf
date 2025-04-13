@@ -17,4 +17,5 @@ resource "null_resource" "tfvars2_folder" {
 
 variable "string2" {
   type        = string
+  default = "2"
 }
