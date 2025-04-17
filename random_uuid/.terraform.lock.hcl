@@ -19,12 +19,12 @@ provider "registry.scalr.io/scalr/scalr" {
   ]
 }
 
-provider "registry.terraform.io/hashicorp/random" {
+/*provider "registry.terraform.io/hashicorp/random" {
   version = "3.5.2"
   hashes = [
     "h1:VavG5unYCa3SYISMKF9pzc3718M0bhPlcbUZZGl7wuo="
   ]
-}
+}*/
 provider "registry.terraform.io/hashicorp/random" {
   version = "1.6.2"
   hashes = [
