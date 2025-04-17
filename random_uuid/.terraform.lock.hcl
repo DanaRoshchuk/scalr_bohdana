@@ -26,7 +26,7 @@ provider "registry.scalr.io/scalr/scalr" {
 "zh:0ef01a4f81147b32c1bea3429974d4d104bbc4be2ba3cfa667031a8183ef88ec",
   ]
 }*/
-provider "registry.terraform.io/hashicorp/random" {
+/*provider "registry.terraform.io/hashicorp/random" {
   version = "3.6.2"
   hashes = [
     "h1:VavG5unYCa3SYISMKF9pzc3718M0bhPlcbUZZGl7wuo=",
@@ -43,7 +43,7 @@ provider "registry.terraform.io/hashicorp/random" {
     "zh:f83e925ed73ff8a5ef6e3608ad9225baa5376446349572c2449c0c0b3cf184b7",
     "zh:fbef0781cb64de76b1df1ca11078aecba7800d82fd4a956302734999cfd9a4af",
   ]
-}
+}*/
 provider "registry.terraform.io/hashicorp/random" {
   version = "1.6.2"
   hashes = [
