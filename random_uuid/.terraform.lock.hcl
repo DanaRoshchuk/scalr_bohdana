@@ -22,7 +22,7 @@ provider "registry.terraform.io/hashicorp/random" {
   version = "3.5.2"
   hashes = [
     "h1:VavG5unYCa3SYISMKF9pzc3718M0bhPlcbUZZGl7wuo=",
-"zh:0ef01a4f81147b32c1bea3429974d4d104bbc4be2ba3cfa667031a8183ef88ec",
+    "zh:0ef01a4f81147b32c1bea3429974d4d104bbc4be2ba3cfa667031a8183ef88ec",
   ]
 }
 provider "registry.terraform.io/hashicorp/random" {
