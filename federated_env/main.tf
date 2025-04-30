@@ -1,9 +1,9 @@
 variable "env" {
-  default = "tfenv1"
+  default = "release-198"
 }
 
 variable "ws" {
-  default = "workspace-1"
+  default = "several"
 }
 
 
