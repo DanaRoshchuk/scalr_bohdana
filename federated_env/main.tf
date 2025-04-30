@@ -11,7 +11,7 @@ data "terraform_remote_state" "state" {
   backend = "remote"
 
   config = {
-    hostname = "mainiacp.federated-demo.testenv.scalr.dev"
+    hostname = "bohdana10.main.scalr.dev"
     organization = var.env
     workspaces = {
       name = var.ws
