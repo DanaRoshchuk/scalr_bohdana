@@ -14,7 +14,7 @@ resource "scalr_variable" "var_env1-update1" {
   key            = "var-${count.index}"
   value          = "TRACE"
   category       = "terraform"
-  environment_id = "env-v0opfcds26k27flp5"
+  environment_id = "env-v0opur9pco6n1uuen"
 }
 resource "random_integer" "ran" {
   count = var.quantity
