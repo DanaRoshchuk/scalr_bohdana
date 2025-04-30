@@ -20,6 +20,6 @@ data "terraform_remote_state" "state" {
 }
 
 
-output "foo_ip" {
-    value = data.terraform_remote_state.state.outputs.scalr_ip
+output "time" {
+    value = data.terraform_remote_state.state.outputs.time
 }
