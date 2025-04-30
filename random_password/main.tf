@@ -9,10 +9,10 @@ resource "random_password" "password" {
 }
 variable "pass_count"{
 type = string
-default = "5"
+default = 2
 }
 
 output "password_out" {
   value = random_password.password[*].result
-sensitive = true
+sensitive = false
 }
