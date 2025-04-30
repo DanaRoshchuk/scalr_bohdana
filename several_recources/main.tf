@@ -61,6 +61,33 @@ count= 1
 output "sensitive1" {
     value     = "<form><a href=\"javascript:alert(1)\">X</a></form>"
 }
+
+output "note" {
+  value     = <<-EOT
+        Web:
+          URL                   : https://dana-outputs.testenv.scalr.dev
+          Username              : admin-super-star
+          Password              : zPXrS7XmbTGESfvU2wG3
+        Shell:
+          kubectl -n dana-outputs exec -it scalr-server-0 -c scalr -- bash
+        Port-forwarding:
+          kubectl -n dana-outputs port-forward scalr-server-0 8022:22
+        UI Watcher:
+          ssh -v testenv -N -R 0.0.0.0:3000:127.0.0.1:3000
+          npx next ui/next
+        Documentation:
+          https://github.com/Scalr/terraform-google-infra/tree/master/modules/terraform-google-preview-saas#user-guide
+    EOT
+
+  sensitive = false
+}
+
+output "just_added" {
+  value     = "secret"
+  sensitive = false
+  description = "key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page."
+}
+
 /*data "terraform_remote_state" "for_output" {
   backend = "remote"
 
