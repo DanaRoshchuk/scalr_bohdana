@@ -2,12 +2,22 @@
 
 terraform{
 backend "remote" {
-  hostname = "amykh4223.main.scalr.dev"
-  organization = "s3"
+  hostname = "bohdana10.dana-workload.testenv.scalr.dev"
+  organization = "Environment-A"
 workspaces {
       name = "clitest"
     }
 }
+/*terraform {
+  cloud {
+    hostname = "bohdana10.dana-workload.testenv.scalr.dev"
+    organization = "Environment-A"
+
+    workspaces {
+      name = "clitest"
+    }
+  }
+}*/
 }
 resource "random_pet" "pet" {
   keepers = {
