@@ -8,6 +8,7 @@ workspaces {
       name = "clitest"
     }
 }
+}
 /*terraform {
   cloud {
     hostname = "bohdana10.dana-workload.testenv.scalr.dev"
@@ -18,7 +19,7 @@ workspaces {
     }
   }
 }*/
-}
+
 resource "random_pet" "pet" {
   keepers = {
     # Generate a new pet name each time
