@@ -1,0 +1,5 @@
+regions:
+us-east-1:
+allowed_domains:
+- "example.com"
+- "example.org"
