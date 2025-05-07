@@ -1,15 +1,15 @@
 variable "quantity" {
-	default = 2
+	#default = 11
 	type = string
 }
 variable "prefix" {
-	default = ["Mr", "Mrs", "Sir"]
-	type = list
+	default = "Sr"
+	type = string
 }
 variable "run_id" {
-  default = "run_id_2"
+  default = {}
 }
 variable "strings" { 
-default = ["a","b","c","d"]
+  default = ["q","w","e","r"]
 type = list(string)
 }
