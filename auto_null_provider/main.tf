@@ -7,11 +7,13 @@ terraform {
   }
 }
 
-resource "null_resource" "resource3" {
-  provisioner "local-exec" {
-    command = "echo $ENV"
-    environment = {
-      ENV = "Hello World!"
-    }
+resource "null_resource" "single" {
+count= 11
+  triggers= {
+    time= timestamp()
   }
+}
+
+output  "time" {
+  value = timestamp()
 }
