@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "null_resource" "single1" {
-count= 1
+count= 2
   triggers= {
     time= timestamp()
   }
