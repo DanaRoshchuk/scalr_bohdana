@@ -1,9 +1,9 @@
 variable "env" {
-  default = "release-198"
+  default = "env1"
 }
 
 variable "ws" {
-  default = "several"
+  default = "WS1111"
 }
 
 
@@ -11,7 +11,7 @@ data "terraform_remote_state" "state" {
   backend = "remote"
 
   config = {
-    hostname = "bohdana10.main.scalr.dev"
+    hostname = "bohdana10.dana-master.testenv.scalr.dev"
     organization = var.env
     workspaces = {
       name = var.ws
@@ -21,5 +21,5 @@ data "terraform_remote_state" "state" {
 
 
 output "time" {
-    value = data.terraform_remote_state.state.outputs.time
+    value = data.terraform_remote_state.state.outputs.id_out
 }
