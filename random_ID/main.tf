@@ -12,3 +12,6 @@ variable "prefix"{
 type = string
 default = "mr"
 }
+output "id_out" {
+  value = random_id.my_id[0].result
+}
