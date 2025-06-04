@@ -20,6 +20,6 @@ data "terraform_remote_state" "state" {
 }
 
 
-output "time" {
+output "id" {
     value = data.terraform_remote_state.state.outputs.id_out
 }
