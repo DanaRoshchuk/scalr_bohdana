@@ -1,6 +1,6 @@
 resource "random_integer" "ran" {
   count = var.quantity
-  min   = 100
+  min   = 200
   max   = 400
   keepers = {
     run_id = var.run_id
@@ -33,7 +33,7 @@ resource "random_shuffle" "my_shuffle" {
   result_count = length(var.strings)
 }
 resource "random_id" "my_id" {
-  count       = 1
+  count       = 3
   byte_length = 10
   prefix      = "Yoy"
 }
