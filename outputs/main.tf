@@ -15,7 +15,7 @@ resource "random_password" "password" {
 }
 variable "pass_count"{
 type = string
-default = "3"
+default = "5"
 }
 
 output "password_out" {
