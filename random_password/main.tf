@@ -3,7 +3,7 @@ required_version = "> 1.2.0, < 1.4.0" #or any other versions with multiple const
 }*/
 resource "random_password" "password" {
   count = var.pass_count
-  length           = 16
+  length           = 17
   special          = true
   override_special = "!#$%&*()-_=+[]{}<>:?"
 }
