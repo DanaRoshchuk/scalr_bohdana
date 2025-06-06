@@ -1,9 +1,9 @@
 variable "env" {
-  default = "env1"
+  default = "Environment-a"
 }
 
 variable "ws" {
-  default = "WS1111"
+  default = "random_id"
 }
 
 
