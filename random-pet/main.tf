@@ -6,7 +6,7 @@ variable "prefix_list" { default = ["Whiskers", "Spot", "Fluffy", "Rex", "Pistol
 resource "random_pet" "my_pet" {
   count  = var.pet_count
   separator = " "
-  length = "4"
+  length = "5"
   prefix = var.zoo_enabled ? element(var.prefix_list, count.index) : var.default_prefix
 }
 
