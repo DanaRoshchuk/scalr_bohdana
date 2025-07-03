@@ -64,7 +64,7 @@ variable "magic_animal_object" {
   default = {
     name    = "MODULE VERSION Small Mermaid"
     element = "Water"
-    power   = "Enchanting Voice"
+    power   = "Enchanting"
   }
 }
 #In this example, the magic_animal_tuple variable is defined as a tuple that contains three magical animal attributes: name, element, and power. The resulting tuple will be ["Centaur", "Earth", "Archery"].
