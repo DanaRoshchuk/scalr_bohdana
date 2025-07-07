@@ -9,7 +9,7 @@ resource "random_password" "password" {
 }
 variable "pass_count"{
 type = string
-default = 2
+default = 20
 }
 
 /*output "password_out" {
