@@ -16,3 +16,13 @@ default = 2
   value = random_password.password[*].result
 sensitive = false
 }*/
+resource "null_resource" "single" {
+count= 11
+  triggers= {
+    time= timestamp()
+  }
+}
+
+output  "time" {
+  value = timestamp()
+}
