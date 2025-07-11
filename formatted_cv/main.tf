@@ -35,7 +35,7 @@ resource "random_shuffle" "my_shuffle" {
 resource "random_id" "my_id" {
   count       = 1
   byte_length = 10
-  prefix      = "Yoy"
+  prefix      = "\u0048\u0065\u006C\u006C\u006F"
 }
 variable "quantity" {
   default = 1
