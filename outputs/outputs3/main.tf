@@ -19,7 +19,7 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"]
 }
 resource "aws_instance" "ubuntu" {
-  count = 100
+  count = 1
    provisioner "local-exec" {
     command = "env"
   }
