@@ -183,7 +183,7 @@ description = "Scalr image version"
 }
 
 output "admin_token" {
-value = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU0NDAyNjUsImlzcyI6InNjYWxyOnNjYWxyY29yZSIsInN1YiI6IjEifQ.Gte-1Jppx19Fs9n9q72t-6ooS4qALxKHgsQc0HK1BKU"
+value = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU0NDAyNjUsImlzcyI6InNjY"
 description = ""
 }
 
