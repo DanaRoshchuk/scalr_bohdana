@@ -1,6 +1,6 @@
 variable "pass_count"{
   type = string
-  default = "5"
+  default = "1"
   sensitive=true
 }
 provider "aws" {
