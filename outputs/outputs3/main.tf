@@ -1,8 +1,4 @@
-variable "pass_count"{
-  type = string
-  default = "1"
-  sensitive=true
-}
+
 provider "aws" {
  region = var.region
 }
